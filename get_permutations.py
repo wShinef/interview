@@ -14,7 +14,7 @@ def get_permutations(s: str):
         ros = s[:i] + s[i+1:]
 
         for p in get_permutations(ros):
-            result.append(c+ros)
+            result.append(c+p)
 
     return result
 
